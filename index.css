@@ -383,23 +383,23 @@
 }
 .social .fa-facebook{
     position: absolute;
-    top: -20;
-    left: 100;
+    top: -20px;
+    left: 100px;
 }
 .social .fa-github{
     position: absolute;
-    top: 50;
-    left: 100;
+    top: 50px;
+    left: 50px;
 }
 .social .fa-instagram{
     position: absolute;
-    top: -20;
-    left: 200;
+    top: -20px;
+    left: 200px;
 }
 .social .fa-youtube{
     position: absolute;
-    top: 50;
-    left: 200;
+    top: 50px;
+    left: 150px;
 }
 .top{
     position: absolute;
@@ -787,18 +787,18 @@
     }
     .social .fa-github{
         position: absolute;
-        top: 10;
-        left: 160;
+        top: 10px;
+        left: 160px;
     }
     .social .fa-instagram{
         position: absolute;
-        top: 10;
-        left: 220;
+        top: 10px;
+        left: 220px;
     }
     .social .fa-youtube{
         position: absolute;
-        top: 10;
-        left: 280;
+        top: 10px;
+        left: 280px;
     }
     .top{
         position: absolute;
