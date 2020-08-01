@@ -4,8 +4,8 @@
     font-family: sans-serif;
 }
 .main{
-    width: 100%;
-    height: 250vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background: linear-gradient(to right, #66CCCC, #006666);
@@ -60,8 +60,8 @@
 .information{
     width: 1000px;
     height: 1000px;
-    position: absolute;
-    top: 20%;
+    position: relative;
+    top: 30%;
     left: 0%;
     margin-left: -5%;
     transform: translatey(-50%);
@@ -74,7 +74,6 @@
     left: 0;
     border-radius: 50%;
     transition: 1s;
-    /*background: #fff;*/
 }
 .infor img{
     width: 100px;
@@ -133,8 +132,8 @@
 
 .controls{
     position: absolute;
-    right: -50%;
-    top: 50%;
+    left: 90vw;
+    top: 40%;
     text-align: center;
 }
 .controls h2{
@@ -171,207 +170,215 @@
 
 .details{
     width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 150vh;
-    left: 0%;
-    margin-left: -5%;
-    transform: translatey(-50%);
-}
-#rectangle{
-    width: 100vw;
-    height: 124vh;
-    position: absolute;
+    height: max-content;
+    position: relative;
     top: 0;
-    left: 4.9vw;
+    left: 0%;
+    margin-left: 0;
     border-style: solid;
     border-color: #006666;
     background: linear-gradient(to right, #66CCCC, #006666);
 }
-.detail{ 
-    top: 0.5vw;
-    left: 0.5vw;
+.area1{
     position: absolute;
-    display: flex;
-    color: #006666;
+    width: 50vw;
+    margin-left: 0vw;
+    margin-top: 0vw;
+    
 }
-.detail img{
-    width: 80px;
-}
-.detail div{
-    margin-left: 20px;
-}
-.detail div h2{
-    margin-top: 25px;
-}
-
-.area{ 
+.area2{
     position: relative;
+    width: 50vw;
+    margin-left: 0vw;
+    margin-top: 0vw;
+    
+}
+.detail1{ 
+    width: 38vw;
+    position: relative;
+    color: #006666;
     background: #CCFFFF;
-    opacity: 80%;
     border-style: solid;
     border-color: #003333;
     border-radius: 5px;
 }
-.area h2{
+.detail2{
+    margin-top: 5vw;
+    margin-left: 50vw;
+    width: 35vw;
+    position: relative;
+    color: #006666;
+    background: #CCFFFF;
+    border-style: solid;
+    border-color: #003333;
+    border-radius: 5px;
+}
+.details img{
     position: absolute;
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 80px;
+    height: 80px;
 }
-.area p{
+.details div h2{
     position: absolute;
+    margin-top: 30px;
+    margin-left: 100px;
 }
-.numberone{
-    top: 5vw;
-    left: 11vw;
-    width: 38vw;
-    height: 45vh;
+.details h3{
+    position: absolute;
+    color: #000;
 }
-.numberone p{
-    margin: 16vh 18% 0;
-}
-.numbertwo{
-    top: 10vw;
-    left: 11vw;
-    width: 38vw;
-    height: 45vh;
-}
-.numbertwo h2{
-    margin: 18vh 3% 0;
-}
-.numbertwo p{
-    margin: 15vh 20% 0;
-}
-.numberthree{
-    top: -40vw;
-    left: 57.5vw;
-    width: 38vw;
-    height: 30vh;
-}
-.numberthree h2{
-    margin: 14vh 3% 0;
-}
-.numberthree p{
-    margin: 14vh 20% 0;
-}
-.numberfour{
-    top: -38vw;
-    left: 57.5vw;
-    width: 38vw;
-    height: 30vh;
-}
-.numberfour h2{
-    margin: 15vh 3% -11vh;
-}
-.numberfour p{
-    margin: 15.5vh 20% 0;
-}
-.numberfive{
-    top: -36vw;
-    left: 57.5vw;
-    width: 38vw;
-    height: 40vh;
+.details p{
+    position: relative;
+    color: #000;
 }
 .line{
-    position: relative;
-    left: 18%;
-    top: 5vw;
-    opacity: 80%;
+    position: absolute;
+    left: 100px;
+    top: 70px;
     width: 70%;
     height: 5px;
     background: #006666;
 }
-.imgskill img{
-    width: 60%;
-    margin-left: 8vw;
-    margin-top: 15%;
+.about{
+    position: relative;
+    top: 10vw;
+    left: 6vw;
+}
+.about p{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 5vw;
+}
+.experience{
+    position: relative;
+    top: 14vw;
+    left: 6vw;
+    
+}
+.experience h3{
+    margin-left: 15px;
+    margin-top: 120px;
+}
+.experience p{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.awards {
+    position: relative;
+    top: 0vw;
+    left: 3vw;
+}
+.awards h3{
+    margin-left: 15px;
+    margin-top: 110px;
+}
+.awards p{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.education {
+    position: relative;
+    top: -1vw;
+    left: 3vw;
+}
+.education h3{
+    margin-left: 15px;
+    margin-top: 110px;
+}
+.education p{
+    width: 70%;
+    margin-top: 115px;
+    margin-left: 100px;
+}
+.skill{
+    position: relative;
+    top: -2vw;
+    left: 3vw;
 }
 
-.areasix{
-    width: 100vw;
-    height: 20vh;
-    position: absolute;
-    top: 91%;
-    margin-left: 0%;
+.imgskill img{
+    position: relative;
+    width: 20vw;
+    height: 10vw;
+    margin-left: 6vw;
+    margin-top: 100px;
+}
+.imgskill p{
+    width: 70%;
+}
+
+.more{
+    position: relative;
+    display: flex;
+    top: 0vw;
+    left: 0vw;
 }
 #more{
     width: 100vw;
-    height: 20vh;
-    position: absolute;
-    opacity: 50%;
+    height: 160px;
+    position: relative;
+    opacity: 100%;
+    margin-top: 0;
+    margin-left: 0vw;
     border-style: solid;
-    border-color: #003333;
+    border-top: 10px solid #66FFFF;
+    border-bottom: 10px solid #66FFFF;
     background: #006666;
 }
-.more{
-    position: absolute;
-    display: flex;
-    margin-top: 30px;
-    left: 3%;
-}
 .more img{
-    width: 100px;
-}
-.more div{
-    margin-left: 10px;
-}
-.more div h2{
-    color: #006666;
-    margin-top: 35px;
-}
-.horizonline{
     position: absolute;
-    left: 0;
-    opacity: 80%;
-    width: 2000px;
-    height: 15px;
-    background: #66FFFF;
-}
-.no_1{
-    top: -11%;
-}
-.no_2{
-    top: 104%;
-}
-.no6{
-    left: 200px;
-    top: 50%;
-    width: 120px;
-    transform:rotate(90deg);
+    border-radius: 50%;
+    border: 5px solid #CCFFFF;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 100px;
+    height: 100px;
 }
 .address {
     color: #fff;
-    position: sticky;
-}
-.address h3{
-    margin: 30px 280px 0px;
+    position: absolute;
 }
 .address h4{
-    margin: -20px 380px 0px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.address h5{
+    margin-top: -15px;
+    margin-left: 250px;
 }
 .contact {
     color: #fff;
-    position: sticky;
+    position: absolute;
 }
-.contact h3{
-    margin: 40px 280px 00px;
+.contact h4{
+    margin-top: 90px;
+    margin-left: 150px;
 }
 .phone{
-    margin: -20px 380px 0px;
+    margin-top: -15px;
+    margin-left: 250px;
 }
 .email{
-    margin: -20px 600px 0px;
+    margin-top: 10px;
+    margin-left: 250px;
 }
 .social{
     color: #fff;
     position: absolute;
-    top: 20%;
-    right: 36%;
+    top: 15%;
+    left: 60%;
 }
-.social h3{
-    right: 100%;
+.social h4{
+    margin-left: 10px;
+    margin-top: 20px;
 }
 .social .fa{
     font-size: 40px;
-    padding-top: 16%;
+    padding-top: 10px;
     text-align: center;
     width: 60px;
     height: 50px;
@@ -383,7 +390,7 @@
 }
 .social .fa-facebook{
     position: absolute;
-    top: -20px;
+    top: 0px;
     left: 100px;
 }
 .social .fa-github{
@@ -393,7 +400,7 @@
 }
 .social .fa-instagram{
     position: absolute;
-    top: -20px;
+    top: 0px;
     left: 200px;
 }
 .social .fa-youtube{
@@ -403,18 +410,20 @@
 }
 .top{
     position: absolute;
-    display: flex;
-    right: 5%;
-    bottom: 10%;    
+    right: 20%;
+    bottom: 100%;    
 }
 .top img{
+    border-color: #009999;
     width: 100px;
+    height: 100px;
 }
 
 
 @media (max-width: 800px){
     .main{
-        height: 720vw;
+        width: 100vw;
+        height: 100vh;
     }
     .nav-logo img{
         width: 100px;
@@ -453,8 +462,8 @@
         width: 50vw;
         height: 50vw;
         position: absolute;
-        top: 7%;
-        left: 0;
+        top: 30%;
+        left: -5vw;
     }
     #home{
         width: 50vw;
@@ -464,7 +473,6 @@
         left: 66%;
         border-radius: 50%;
         transition: 1s;
-        /*background: #fff;*/
     }
     .infor img{
         width: 12vw;
@@ -540,7 +548,7 @@
         position: relative;
         text-align: center;
         top: 60vw;
-        left: 30vw;
+        margin-left: -60vw;
     }
     .controls h2{
         margin-top: 10px;
@@ -559,205 +567,194 @@
 
     .details{
         width: 100vw;
-        height: 0vw;
-        position: absolute;
-        top: 160vw;
+        height: max-content;
+        position: relative;
+        top: 0vw;
         left: 0%;
-        margin-left: -5%;
-        transform: translatey(-50%);
-    }
-    #rectangle{
-        width: 100vw;
-        height: 480vw;
-        position: absolute;
-        top: 0;
-        left: 5vw;
-        border-style: solid;
-        border-color: #006666;
+        margin-left: 0;
+        border: 3px solid #006666;
         background: linear-gradient(to right, #66CCCC, #006666);
     }
-    .detail img{
-        width: 50px;
-        height: 50px;
-    }
-    .detail{
-        position: absolute;
-        color: #006666;
-        top: 1vw;
-        left: 1vw;
-        margin-top: 0;
-        margin-left: 0;
-    }
-    .detail div{
-        margin-left: 10px;
-    }
-    .detail div h2{
-        margin-top: 10px;
-    }
-    .area{ 
+    .area1{
         position: relative;
+        width: 50vw;
+        left: 0vw;
+        top: 0vw;
+    }
+    .area2{
+        position: relative;
+        width: 0vw;
+        left: 4vw;
+        top: 10vw;
+    }
+    .detail1{ 
+        width: 88vw;
+        position: relative;
+        color: #006666;
         background: #CCFFFF;
-        opacity: 60%;
         border-style: solid;
         border-color: #003333;
         border-radius: 5px;
     }
-    .area h2{
+    .detail2{
+        width: 88vw;
+        margin-top: 5vw;
+        margin-left: 0vw;
+        position: relative;
+        color: #006666;
+        background: #CCFFFF;
+        border-style: solid;
+        border-color: #003333;
+        border-radius: 5px;
+    }
+    .details img{
         position: absolute;
+        top: 0.5vw;
+        left: 0.5vw;
+        width: 60px;
+        height: 60px;
     }
-    .area p{
+    .details div h2{
         position: absolute;
+        margin-top: 16px;
+        margin-left: 70px;
     }
-    .numberone{
-        top: 10vw;
-        left: 9vw;
-        width: 90vw;
-        height: 85vw;
+    .details h3{
+        position: absolute;
+        color: #000;
     }
-    .numberone p{
-        margin: 18% 18% 0;
-    }
-    .numbertwo{
-        top: 20vw;
-        left: 9vw;
-        width: 90vw;
-        height: 120vw;
-    }
-    .numbertwo h2{
-        width: 13vw;
-        margin: 22% 5% 0;
-    }
-    .numbertwo p{
-        margin: 18% 20% 0;
-    }
-    .numberthree{
-        top: 30vw;
-        left: 9vw;
-        width: 90vw;
-        height: 70vw;
-    }
-    .numberthree h2{
-        width: 13vw;
-        margin: 20% 5% 0;
-    }
-    .numberthree p{
-        margin: 22% 20% 0;
-    }
-    .numberfour{
-        top: 40vw;
-        left: 9vw;
-        width: 90vw;
-        height: 70vw;
-    }
-    .numberfour h2{
-        width: 13vw;
-        margin: 20% 5% 0;
-    }
-    .numberfour p{
-        margin: 25% 20% 0;
-    }
-    .numberfive{
-        top: 50vw;
-        left: 9vw;
-        width: 90vw;
-        height: 60vw;
+    .details p{
+        position: relative;
+        color: #000;
     }
     .line{
-        position: relative;
-        left: 18%;
-        top: 11vw;
-        opacity: 80%;
+        position: absolute;
+        left: 65px;
+        top: 50px;
         width: 70%;
         height: 5px;
         background: #006666;
     }
-    .imgskill img{
-        opacity: 100%;
+    .about{
+        top: 10vw;
+        left: 5vw;
+    }
+    .about p{
         width: 70%;
-        margin-left: 12vw;
-        margin-top: 20%;
+        margin-top: 75px;
+        margin-left: 65px;
+    }
+    .experience{
+        position: relative;
+        top: 15vw;
+        left: 5vw;
+    }
+    .experience h3{
+        width: 40px;
+        margin-left: 15px;
+        margin-top: 120px;
+    }
+    .experience p{
+        margin-top: 75px;
+        margin-left: 65px;
+    }
+    .awards {
+        position: relative;
+        top: 5vw;
+        left: 1vw;
+    }
+    .awards h3{
+        width: 40px;
+        margin-left: 15px;
+        margin-top: 80px;
+    }
+    .awards p{
+        width: 70%;
+        margin-top: 80px;
+        margin-left: 65px;
+    }
+    .education {
+        position: relative;
+        top: 5vw;
+        left: 1vw;
+    }
+    .education h3{
+        margin-left: 15px;
+        margin-top: 90px;
+    }
+    .education p{
+        width: 60%;
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    .skill{
+        position: relative;
+        top: 5vw;
+        left: 1vw;
+    }
+    .imgskill img{
+        position: relative;
+        width: 50vw;
+        height: 30vw;
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+    .imgskill p{
+        width: 70%;
     }
 
-    .areasix{
-        width: 100vw;
-        height: 70vw;
-        position: absolute;
-        top: 89.5%;
-        margin-left: 0%;
+    .more{
+        position: relative;
+        display: flex;
+        top: 0vw;
+        left: 0vw;
     }
     #more{
         width: 100vw;
-        height: 70vw;
-        position: absolute;
-        opacity: 50%;
+        height: max-content;
+        position: relative;
+        opacity: 100%;
+        margin-top: 0;
+        margin-left: 0vw;
         border-style: solid;
-        border-color: #003333;
+        border-top: 10px solid #66FFFF;
+        border-bottom: 10px solid #66FFFF;
         background: #006666;
-    }
-    .more{
-        position: absolute;
-        display: flex;
-        margin-top: 2vw;
-        left: 2vw;
     }
     .more img{
-        width: 50px;
-        height: 50px;
-    }
-    .more div{
-        margin-left: 10px;
-    }
-    .more div h2{
-        color: #006666;
+        position: absolute;
+        border-radius: 50%;
+        border: 5px solid #CCFFFF;
         margin-top: 10px;
-    }
-    .horizonline{
-        position: absolute;
-        left: 0;
-        opacity: 80%;
-        width: 100%;
-        height: 10px;
-        background: #66FFFF;
-    }
-    .no_1{
-        top: -4%;
-    }
-    .no_2{
-        top: 102%;
-    }
-    .no6{
-        position: absolute;
-        left: 16%;
-        top: 70px;
-        width: 70%;
-        height: 5px;
-        background: #006666;
-        transform: rotate(0deg);
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
     }
     .address {
-        width: 120vw;
         color: #fff;
-        position: sticky;
-    }
-    .address h3{
-        margin: 80px 50px;
+        position: relative;
     }
     .address h4{
-        margin: -100px 150px;
+        margin: 200px 20px 0px;
+    }
+    .address h5{
+        width: 70vw;
+        margin: 10px 50px 20vw;
     }
     .contact {
-        width: 120vw;
         color: #fff;
-        position: sticky;
+        position: absolute;
     }
-    .contact h3{
-        margin: 110px 50px;
+    .contact h4{
+        margin: 100px 20px 0;
     }
     .phone{
-        margin: -130px 150px;
+        position: relative;
+        margin: 10px 50px 0;
     }
     .email{
-        margin: 140px 150px;
+        position: relative;
+        margin: 10px 50px 0px;
     }
     .social{
         color: #fff;
@@ -765,7 +762,7 @@
         top: 0px;
         left: 50px;
     }
-    .social h3{
+    .social h4{
         display: none;
     }
     .social .fa{
@@ -782,31 +779,32 @@
     }
     .social .fa-facebook{
         position: absolute;
-        top: 10;
-        left: 100;
+        top: 20px;
+        left: 50px;
     }
     .social .fa-github{
         position: absolute;
-        top: 10px;
-        left: 160px;
+        top: 20px;
+        left: 125px;
     }
     .social .fa-instagram{
         position: absolute;
-        top: 10px;
-        left: 220px;
+        top: 20px;
+        left: 200px;
     }
     .social .fa-youtube{
         position: absolute;
-        top: 10px;
-        left: 280px;
+        top: 20px;
+        left: 275px;
     }
     .top{
         position: absolute;
-        display: flex;
-        right: 5vw;
-        bottom: 5vw;    
+        right: 20vw;
+        bottom: 20vw;    
     }
     .top img{
+        border-color: #009999;
         width: 50px;
+        height: 50px;
     }
 }
