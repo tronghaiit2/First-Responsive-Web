@@ -1,12 +1,12 @@
 <html>
 <head>
-    <title>CV Web</title>
+    <title>First Responsive Web</title>
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <link rel = "stylesheet" href = "index.css">
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class = "main">
+    <div id = "home">
         <div class = "nav-bar">
             <div class = "nav-logo">
                 <img src = "Image/Name-01.png">
@@ -29,49 +29,80 @@
 
         <div class ="information">
             <div class = "overlay"></div>
-            <img src = "Image/Profile.jpg" class ="Profile">
-            <div id = "home">
+            <img src = "Image/Avatar-01.png" id = "avatar">
+            <div class = "profile" id = "profile">
+                <img src = "Image/Profile-01.png">
+                <div>
+                    <img src ="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg">
+                    <h2>Trong Hai Nguyen</h2>
+                </div>
+                <div class = "profile1">
+                    <h4>From:</h4>
+                    <p>Bac Giang</p>
+                </div>
+                <div class = "profile2">
+                    <h4>Live in:</h4>
+                    <p>Hanoi</p>
+                </div>
+                <div class = "profile3">
+                    <h4>D.O.B:</h4>
+                    <p>August 9, 2000</p>
+                </div>
+                <div class = "profile4">
+                    <h4>Height:</h4>
+                    <p>1.74m</p>
+                </div>
+                <div class = "profile5">
+                    <h4>Weight:</h4>
+                    <p>61kg</p>
+                </div>
+                <div class = "profile5">
+                    <h4>Age:</h4>
+                    <p>21</p>
+                </div>
+            </div>
+            <div id = "main">
                 <div class = "infor one">
-                    <img src = "Image/About-01.png">
-                        <div>
-                            <h1>ABOUT</h1>
-                            <p>About</p>
-                        </div>        
+                    <a href="#about"><img src = "Image/About-01.png"></a>
+                    <div>
+                        <h1>ABOUT</h1>
+                        <p>About</p>
+                    </div>        
                 </div>
                 <div class = "infor two">
-                    <img src = "Image/Experience-01.png">
-                        <div>
-                            <h1>EXPERIENCE</h1>
-                            <p>Experience</p>
-                        </div> 
+                    <a href="#experience"><img src = "Image/Experience-01.png"></a>
+                    <div>
+                        <h1>EXPERIENCE</h1>
+                        <p>Experience</p>
+                    </div> 
                 </div>
                 <div class = "infor three">
-                    <img src = "Image/Awards-01.png">
-                        <div>
-                            <h1>AWARDS</h1>
-                          <p>Awards</p>
-                        </div> 
+                    <a href="#awards"><img src = "Image/Awards-01.png"></a>
+                    <div>
+                        <h1>AWARDS</h1>
+                        <p>Awards</p>
+                    </div> 
                 </div>
                 <div class = "infor four">
-                    <img src = "Image/Education-01.png">
-                        <div>
-                           <h1>EDUCATION</h1>
-                            <p>Education</p>
-                      </div> 
+                    <a href="#education"><img src = "Image/Education-01.png"></a>
+                    <div>
+                        <h1>EDUCATION</h1>
+                        <p>Education</p>
+                    </div> 
                 </div>
                 <div class = "infor five">
-                    <img src = "Image/Skill-01.png">
-                        <div>
-                            <h1>SKILL</h1>
-                            <p>Skill</p>
-                        </div> 
+                    <a href="#skill"><img src = "Image/Skill-01.png"></a>
+                    <div>
+                        <h1>SKILL</h1>
+                        <p>Skill</p>
+                    </div> 
                 </div>
                 <div class = "infor six">
-                    <img src = "Image/More-01.png">
-                        <div>
-                            <h1>MORE</h1>
-                            <p>More</p>
-                        </div> 
+                    <a href="#more"><img src = "Image/More-01.png"></a>
+                    <div>
+                        <h1>MORE</h1>
+                        <p>More</p>
+                    </div> 
                 </div>
             </div>
             <div class = "controls">
@@ -81,104 +112,103 @@
             </div>
         </div>  
     </div>
-    <div class = "details" id = "details">
+    <div class = "details">
         <div class = "area1">
-        <div class = "detail1 about" id = "about">
-            <img src = "Image/About-01.png">
-                <div>
-                    <h2>ABOUT</h2>
-                </div>        
-            <div class = "line no1"></div>
-            <p>I am second-year student at 
-            Hanoi University of Science and Technology.
-            <br><br> My major is Computer Enginerring(CE). 
-            I want to study in
-            Embedded System and Internet of Things (IoT).
-            <br><br> I expect I can make everything smarter and
-            smarter in the future.<br><br></p>
-        </div>
-        <div class = "detail1 experience" id = "experience">
-            <img src = "Image/Experience-01.png">
-                <div>
-                    <h2>EXPERIENCE</h2>
-                </div>        
-            <div class = "line no2"></div>
-            <div class = "experience1"></div>
-            <h3>18 - 20 :
-            <br><br><br><br><br>18 - 20 :</h3>
-
-            <p> Vietnamese Students’ Association of 
-            Hanoi University of Science and Technology,
-            <br>Team leader at Supporting Students Department.
-            <br>Helping students in studying and 
-            organizing events for students.
-
-            <br><br> HoChiMinh Communist Youth Union of 
-            Hanoi University of Science and Technology,
-            <br>Vice Chairman at Academic Support Club.
-            <br>Helping students in studying by 
-            opening over time class.<br><br></p>
-        </div>
+            <div class = "detail1 about" id = "about">
+                <a href="#main"><img src = "Image/About-01.png"></a>
+                <h2>ABOUT</h2>    
+                <div class = "line no1"></div>
+                <div class = "about1">
+                    <h4>Present:</h4>
+                    <p>Junior at Hanoi University 
+                    of Science and Technology.<br><br> </p>
+                </div>
+                <div class = "about2">
+                    <h4>Major:</h4> 
+                    <p>Computer Engineering (CE).<br><br></p>
+                </div>
+                <div class = "about3">
+                    <h4>Objective:</h4>
+                    <p>Develope in
+                    Embedded System (ES) and Internet of Things (IoT).
+                    <br> Make everything smarter 
+                    and smarter in the future.<br><br></p>
+                </div>
+            </div>
+            <div class = "detail1 experience" id = "experience">
+                <a href="#main"><img src = "Image/Experience-01.png"></a>
+                <h2>EXPERIENCE</h2>     
+                <div class = "line no2"></div>
+                <div class = "experience1">
+                    <h3>18 - 21 :</h3>
+                    <p> Vietnamese Students’ Association of 
+                    Hanoi University of Science and Technology,
+                    <br>Team leader at Supporting Students Department.
+                    <br>Helping students in studying and 
+                    organizing events for students.<br><br></p>
+                </div>
+                <div class = "experience2">
+                    <h3>18 - 21 :</h3>
+                    <p> HoChiMinh Communist Youth Union of 
+                    Hanoi University of Science and Technology,
+                    <br>Vice Chairman at Academic Support Club.
+                    <br>Helping students in studying by 
+                    opening over time class and online via social network.<br><br></p>
+                </div>
+            </div>
         </div>
         <div class = "area2">
-        <div class = "detail2 awards" id = "awards">
-            <img src = "Image/Awards-01.png">
-                <div>
-                    <h2>AWARDS</h2>
-                </div>        
-            <div class = "line no3"></div>
-            <h3>18 - 19 :
-            <br><br>19 - 20 :</h3>
-
-            <p>The title “STUDENT WITH FIVE GOOD MERITS”
-            <br> University and City level.
-
-            <br><br>The Exellence Scholarship of 
-            <br> Hanoi University of Science and Technology.<br><br></p>
-        </div>
-        <div class = "detail2 education" id = "education">
-            <img src = "Image/Education-01.png">
-                <div>
-                    <h2>EDUCATION</h2>
-                </div>        
-            <div class = "line no4"></div>
-            <h3>15 - 18 :
-            <br><br>18 - 20 :</h3>
-
-            <p> Bac Giang High School For Gifted Students.
-            <br><br> Hanoi University of Science and Technology. <br><br></p>
-        </div>
-        <div class = "detail2 skill" id = "skill">
-            <img src = "Image/Skill-01.png">
-                <div>
-                    <h2>SKILL</h2>
-                </div>        
-            <div class = "line no5"></div>
-            <div class = "imgskill">
-                <img src = "Image/Mobileskill.png">
+            <div class = "detail2 awards" id = "awards">
+                <a href="#main"><img src = "Image/Awards-01.png"></a>
+                <h2>AWARDS</h2>      
+                <div class = "line no3"></div>
+                <div class = "award1">
+                    <h3>18 - 19 :</h3>
+                    <p>The title “STUDENT WITH FIVE GOOD MERITS”
+                    University and City level.<br><br></p>
+                </div>
+                <div class = "award2">
+                    <h3>19 - 21 :</h3>
+                    <p>The Exellence Scholarship of 
+                    Hanoi University of Science and Technology.<br><br></p>
+                </div>
+            </div>
+            <div class = "detail2 education" id = "education">
+                <a href="#main"><img src = "Image/Education-01.png"></a>
+                <h2>EDUCATION</h2>   
+                <div class = "line no4"></div>
+                <div class = "edu1">
+                    <h3>15 - 18 :</h3>
+                    <p> Bac Giang High School for Gifted Students.<br><br></p>
+                </div>
+                <div class = "edu2">
+                    <h3>18 - 21 :</h3>
+                    <p> Hanoi University of Science and Technology. <br><br></p>
+                </div>
+            </div>
+            <div class = "detail2 skill" id = "skill">
+                <a href="#main"><img src = "Image/Skill-01.png"></a>
+                <h2>SKILL</h2>       
+                <div class = "line no5"></div>
+                <div class = "imgskill">
+                <img src = "Image/Skill.png">
                 <p><br><br></p>   
             </div>
         </div>
         <p><br><br><br><br><br></p>
-        </div> 
-    </div>
+    </div> 
     <div class = "more" id = "more">
-        <img src = "Image/More-01.png">
+        <a href="#main"><img src = "Image/More-01.png"></a>
             <div class = "social">
-                <h4> SOCIAL: </h4>
+                <h4>SOCIAL NETWORKS</h4>
                 <div>
-                    <a href="https://www.facebook.com/0chuachacla0.HaiNT" target="_blank">
-                        <i class= "fa fa-facebook"></i></a>
-    
-                    <a href="https://github.com/tronghaiit2" target="_blank">
-                        <i class= "fa fa-github"></i></a> 
-    
-                    <a href="https://www.instagram.com/tronghai_legend/" target="_blank">
-                        <i class= "fa fa-instagram"></i></a> 
-    
-                    <a href="https://www.youtube.com/channel/UCJLsCYmWOV8lzd40OU2hRxw/videos?view_as=subscriber" target="_blank">
-                        <i class= "fa fa-youtube"></i></a> 
-                    </div>   
+                <a href="https://www.facebook.com/0chuachacla0.HaiNT" target="_blank">
+                    <i class= "fa fa-facebook"></i></a>
+                <a href="https://github.com/tronghaiit2" target="_blank">
+                    <i class= "fa fa-github"></i></a> 
+                <a href="https://codepen.io/tronghaiit2" target="_blank">
+                    <i class= "fa fa-codepen"></i></a> 
+                </div>   
             </div>      
         <div class = "address">
             <h4>Address: </h4>
@@ -190,8 +220,7 @@
             <h5 class = "email"><i class= "fa fa-envelope"></i> Email: hai.nt183730@sis.hust.edu.vn</h5>
         </div>
         <div class = "top">
-            <a href="#home">
-            <img src = "Image/Top-01.png"></a>
+            <a href="#main"><img src = "Image/Top-01.png"></a>
         </div>
     </div>        
 

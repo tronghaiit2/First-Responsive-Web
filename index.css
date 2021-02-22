@@ -3,16 +3,20 @@
     padding: 0;
     font-family: sans-serif;
 }
-.main{
+#home{
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    border: 1px solid #006666;
     background: linear-gradient(to right, #66CCCC, #006666);
 }
 .nav-bar{
     display: flex;
     padding: 30px 40px;
+}
+#logo{
+    cursor: pointer;
 }
 .nav-logo{
     z-index: 1;
@@ -21,6 +25,7 @@
     width: 100px;
 }
 .nav-links{
+    z-index: 1;
     flex: 1;
 }
 .nav-links ul{
@@ -57,6 +62,58 @@
     display: none;
 }
 
+#avatar{
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    border-radius: 20%;
+    border: 2px solid #66CCCC;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+#profile{
+    width: 500px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    border-radius: 20px;
+    border: 2px solid #66CCCC;
+    background-color: #CCFFFF;
+    cursor: pointer;
+    z-index: 1;
+}
+.profile img{
+    width: 250px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 10px;
+    border: 2px solid #66CCCC;
+}
+.profile div img{
+    width: 50px;
+    top: 222px;
+    position: absolute;
+} 
+.profile div h2{
+    left: 25px;
+    top: 265px;
+    position: absolute;
+}
+.profile div h4{
+    position: absolute;
+    margin-left: 280px;
+}
+.profile div p{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
 .information{
     width: 1000px;
     height: 1000px;
@@ -66,7 +123,7 @@
     margin-left: -5%;
     transform: translatey(-50%);
 }
-#home{
+#main{
     width: 1000px;
     height: 1000px;
     position: absolute;
@@ -75,13 +132,16 @@
     border-radius: 50%;
     transition: 1s;
 }
-.infor img{
-    width: 100px;
-}
 .infor{
     position: absolute;
     display: flex;
     color: #006666;
+}
+.infor img{
+    width: 100px;
+}
+.infor li{
+    list-style: none;
 }
 .infor div{
     margin-left: 20px;
@@ -121,51 +181,43 @@
     right: 630px;
     transform: rotate(-120deg);
 }
-.Profile{
-    width: 250px;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
 
 .controls{
     position: absolute;
     left: 90vw;
-    top: 40%;
+    top: 50%;
     text-align: center;
 }
 .controls h2{
-    margin: 40px 0;
+    margin: -100px 0;
     color: #fff;
 }
 #next{
-    margin-left: -5px;
-    width: 50px;
-    cursor: pointer;
-    transform: rotate(90deg);
-}
-#back{
     margin-left: 5px;
     width: 50px;
     cursor: pointer;
     transform: rotate(270deg);
 }
+#back{
+    margin-left: -5px;
+    width: 50px;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
 .overlay{
-   width: 0;
-   height: 0;
-   border-top-left-radius: 50%;
-   border-bottom-left-radius:  50%;
-   border-bottom-right-radius:  50%;
-   border-top-right-radius: 50%;
-   border-top: 500px solid #006666; 
-   border-right: 500px solid transparent; 
-   border-left: 500px solid #006666; 
-   border-bottom: 500px solid #006666; 
-   position: absolute;
-   left: 0;
-   top: 0;
+    width: 0;
+    height: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:  50%;
+    border-bottom-right-radius:  50%;
+    border-top-right-radius: 50%;
+    border-top: 500px solid #006666; 
+    border-right: 500px solid transparent; 
+    border-left: 500px solid #006666; 
+    border-bottom: 500px solid #006666; 
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .details{
@@ -184,17 +236,16 @@
     width: 50vw;
     margin-left: 0vw;
     margin-top: 0vw;
-    
 }
 .area2{
     position: relative;
     width: 50vw;
     margin-left: 0vw;
     margin-top: 0vw;
-    
 }
 .detail1{ 
-    width: 38vw;
+    width: 33vw;
+    padding-right: 5vw;
     position: relative;
     color: #006666;
     background: #CCFFFF;
@@ -205,7 +256,8 @@
 .detail2{
     margin-top: 5vw;
     margin-left: 50vw;
-    width: 35vw;
+    width: 30vw;
+    padding-right: 5vw;
     position: relative;
     color: #006666;
     background: #CCFFFF;
@@ -214,22 +266,28 @@
     border-radius: 5px;
 }
 .details img{
+    z-index: 1;
+    cursor: pointer;
     position: absolute;
     top: 0.5vw;
     left: 0.5vw;
     width: 80px;
     height: 80px;
 }
-.details div h2{
+.details h2{
     position: absolute;
     margin-top: 30px;
     margin-left: 100px;
 }
 .details h3{
+    margin-left: 15px;
     position: absolute;
     color: #000;
 }
 .details p{
+    width: 75%;
+    margin-left: 100px;
+    text-align: justify;
     position: relative;
     color: #000;
 }
@@ -237,78 +295,96 @@
     position: absolute;
     left: 100px;
     top: 70px;
-    width: 70%;
+    width: 68%;
     height: 5px;
     background: #006666;
 }
 .about{
+    z-index: 1;
     position: relative;
     top: 10vw;
     left: 6vw;
 }
-.about p{
-    width: 70%;
+.about h4{
+    margin-left: 15px;
+    position: absolute;
+    color: #000;
+}
+.about1 p{
     margin-top: 100px;
-    margin-left: 5vw;
+    margin-left: 100px;
+}
+.about2 p{
+    margin-top: 0px;
+    margin-left: 100px;
+}
+.about3 p{
+    margin-top: 0px;
+    margin-left: 100px;
 }
 .experience{
+    z-index: 1;
     position: relative;
     top: 14vw;
     left: 6vw;
-    
 }
-.experience h3{
-    margin-left: 15px;
-    margin-top: 120px;
+.experience1 h3{
+    margin-top: 0px;
 }
-.experience p{
-    width: 70%;
+.experience1 p{
     margin-top: 100px;
-    margin-left: 100px;
+}
+.experience2 h3{
+    margin-top: 0px;
+}
+.experience2 p{
+    margin-top: 0px;
 }
 .awards {
     position: relative;
     top: 0vw;
     left: 3vw;
 }
-.awards h3{
-    margin-left: 15px;
-    margin-top: 110px;
+.award1 h3{
+    margin-top: 0px;
 }
-.awards p{
-    width: 70%;
+.award1 p{
     margin-top: 100px;
-    margin-left: 100px;
+}
+.award2 h3{
+    margin-top: 0px;
+}
+.award2 p{
+    margin-top: 0px;
 }
 .education {
     position: relative;
     top: -1vw;
     left: 3vw;
 }
-.education h3{
-    margin-left: 15px;
-    margin-top: 110px;
+.edu1 h3{
+    margin-top: 0px;
 }
-.education p{
-    width: 70%;
-    margin-top: 115px;
-    margin-left: 100px;
+.edu1 p{
+    margin-top: 100px;
+}
+.edu2 h3{
+    margin-top: 0px;
+}
+.edu2 p{
+    margin-top: 0px;
 }
 .skill{
     position: relative;
     top: -2vw;
     left: 3vw;
 }
-
 .imgskill img{
     position: relative;
     width: 20vw;
     height: 10vw;
-    margin-left: 6vw;
+    margin-left: 20%;
     margin-top: 100px;
-}
-.imgskill p{
-    width: 70%;
 }
 
 .more{
@@ -369,12 +445,12 @@
 .social{
     color: #fff;
     position: absolute;
-    top: 15%;
+    top: 0;
     left: 60%;
 }
 .social h4{
-    margin-left: 10px;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 .social .fa{
     font-size: 40px;
@@ -390,27 +466,22 @@
 }
 .social .fa-facebook{
     position: absolute;
-    top: 0px;
-    left: 100px;
+    top: 65px;
+    left: 0px;
 }
 .social .fa-github{
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 65px;
+    left: 80px;
 }
-.social .fa-instagram{
+.social .fa-codepen{
     position: absolute;
-    top: 0px;
-    left: 200px;
-}
-.social .fa-youtube{
-    position: absolute;
-    top: 50px;
-    left: 150px;
+    top: 65px;
+    left: 160px;
 }
 .top{
     position: absolute;
-    right: 20%;
+    right: 15%;
     bottom: 100%;    
 }
 .top img{
@@ -419,12 +490,7 @@
     height: 100px;
 }
 
-
-@media (max-width: 800px){
-    .main{
-        width: 100vw;
-        height: 100vh;
-    }
+@media (max-width: 1000px){
     .nav-logo img{
         width: 100px;
     }
@@ -441,6 +507,7 @@
         color: #fff;
         margin: 10px 20px;
         font-size: 50px;
+        z-index: 1;
         cursor: pointer;
     }
     .nav-links{
@@ -457,33 +524,210 @@
     .nav-links ul a{
         display: block;
     }
+    @media (min-width: 700px){
+    #home{
+        height: 100vw;
+    }
+    .information{
+        position: relative;
+        margin-left: -150px;
+    }
+    .controls{
+        position: absolute;
+        left: 99vw;
+        top: 70%;
+        text-align: center;
+    }
+    .area2{
+        margin-top: 10vw;
+    }
+    .details h3{
+        width: 35px;
+        margin-left: 15px;
+    }
+    .details p{
+        margin-left: 60px;
+    }
+    .line{
+        position: absolute;
+        left: 100px;
+        top: 70px;
+        width: 60%;
+        height: 5px;
+        background: #006666;
+    }
+    .about{
+        z-index: 1;
+        position: relative;
+        top: 10vw;
+        left: 6vw;
+    }
+    .about h4{
+        margin-left: 15px;
+        position: absolute;
+        color: #000;
+    }
+    .about p{
+        width: 22vw;
+        margin-left: 100px;
+    }
+    .about1 p{
+        margin-top: 100px;
+    }
+    .about2 p{
+        margin-top: 0px;
+    }
+    .about3 p{
+        margin-top: 0px;
+    }
+    .experience{
+        position: relative;
+        top: 14vw;
+        left: 6vw;
+    }
+    .experience p{
+        text-align: left;
+        width: 25vw;
+    }
+    .experience h3{
+        margin-top: 0px;
+    }
+    .experience1 p{
+        margin-top: 100px;
+    }
+    .experience2 p{
+        margin-top: 0px;
+    }
+    .awards {
+        position: relative;
+        top: 0vw;
+        left: 3vw;
+    }
+    .award h3{
+        margin-top: 0px;
+    }
+    .award1 p{
+        width: 22vw;
+        margin-top: 100px;
+    }
+    .award2 p{
+        width: 22vw;
+        margin-top: 0px;
+    }
+    .education {
+        position: relative;
+        top: -1vw;
+        left: 3vw;
+    }
+    .education h3{
+        margin-top: 0px;
+    }
+    .edu1 p{
+        width: 22vw;
+        margin-top: 100px;
+    }
+    .edu2 p{
+        width: 22vw;
+        margin-top: 0px;
+    }
+    .skill{
+        position: relative;
+        top: -2vw;
+        left: 3vw;
+    }
+    .imgskill img{
+        position: relative;
+        width: 25vw;
+        height: 13vw;
+        margin-left: 5vw;
+        margin-top: 100px;
+    }
+    }
+}
 
+@media (max-width: 700px){
+    #home{
+        width: 101vw;
+        height: 100vh;
+    }
+    #avatar{
+        width: 50%;
+        position: absolute;
+        top: 100%;
+        left: 75%;
+        z-index: 1;
+    }
+    #profile{
+        width: 88vw;
+        height: 50vw;
+        position: absolute;
+        top: 48%;
+        left: 20%;
+        border-radius: 10px;
+        border: 2px solid #66CCCC;
+        background-color: #CCFFFF;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .profile img{
+        width: 40vw;
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        border-radius: 5px;
+        border: 2px solid #66CCCC;
+    }
+    .profile div img{
+        width: 8vw;
+        top: 35vw;
+        position: absolute;
+    } 
+    .profile div h2{
+        text-size-adjust: 80%;
+        top: 43vw;
+        left: 2vw;
+        position: absolute;
+    }
+    .profile div h4{
+        position: absolute;
+        margin-left: 45vw;
+    }
+    .profile div p{
+        width: 30vw;
+        position: relative;
+        margin-top: 2vw;
+        margin-left: 60vw;
+    }
     .information{
         width: 50vw;
         height: 50vw;
         position: absolute;
         top: 30%;
-        left: -5vw;
+        left: 0vw;
     }
-    #home{
+    #main{
         width: 50vw;
         height: 50vw;
         position: relative;
         top: 50%;
-        left: 66%;
+        left: 50%;
         border-radius: 50%;
         transition: 1s;
-    }
-    .infor img{
-        width: 12vw;
-        height: 12vw;
     }
     .infor{
         position: relative;
         display: flex;
         color: #006666;
     }
+    .infor img{
+        width: 12vw;
+        height: 12vw;
+    }
+    .infor a{
+        list-style: none;
+    }
     .infor div{
+        display: none;
         margin-left: 5px;
     }
     .infor div h1{
@@ -493,45 +737,37 @@
         margin-top: 15px;
     }
     .one{
-        top: -40%;
-        right: 55%;
+        top: -43%;
+        right: 65%;
         transform: rotate(-120deg);
     }
     .two{
-        top: -72%;
-        right: -40%;
-        transform: rotate(-60deg);
-        
+        top: -82%;
+        right: -38%;
+        transform: rotate(-60deg); 
     }
     .three{
-        top: -20%;
-        right: -95%;
+        top: -25%;
+        right: -100%;
         transform: rotate(0deg);
     }
     .four{
-        top: 44%;
-        right: -53%;
+        top: 45%;
+        right: -64%;
         transform: rotate(60deg);
     }
     .five{
-        top: 29%;
-        right: 40%;
+        top: 38%;
+        right: 38%;
         transform: rotate(120deg);
     }
     .six{
-        top: -75%;
-        right: 95%;
+        top: -65%;
+        right: 100%;
         transform: rotate(180deg);
     }
-    .Profile{
-        width: 50%;
-        position: absolute;
-        top: 100%;
-        left: 90%;
-        z-index: 1;
-    }
     .overlay{
-        left: 15%;
+        left: 0;
         border-top-left-radius: 50%;
         border-bottom-left-radius:  50%;
         border-bottom-right-radius:  50%;
@@ -542,13 +778,22 @@
         border-bottom: 50vw solid #006666; 
         position: absolute;
     }
+    @media (min-width: 500px){
+        .controls{
+            position: absolute;
+            left: 80vw;
+            top: 150%;
+            text-align: center;
+            }
+        }
+    @media (max-width: 500px){
     .controls{
         display: flex;
         height: 50px;
         position: relative;
         text-align: center;
         top: 60vw;
-        margin-left: -60vw;
+        left: 25vw;
     }
     .controls h2{
         margin-top: 10px;
@@ -563,6 +808,7 @@
         margin-top: 5px;
         cursor: pointer;
         transform: rotate(0deg);
+    }
     }
 
     .details{
@@ -588,7 +834,7 @@
         top: 10vw;
     }
     .detail1{ 
-        width: 88vw;
+        width: 82vw;
         position: relative;
         color: #006666;
         background: #CCFFFF;
@@ -597,7 +843,7 @@
         border-radius: 5px;
     }
     .detail2{
-        width: 88vw;
+        width: 82vw;
         margin-top: 5vw;
         margin-left: 0vw;
         position: relative;
@@ -608,13 +854,15 @@
         border-radius: 5px;
     }
     .details img{
+        z-index: 1;
+        cursor: pointer;
         position: absolute;
-        top: 0.5vw;
-        left: 0.5vw;
+        top: 1vw;
+        left: 1vw;
         width: 60px;
         height: 60px;
     }
-    .details div h2{
+    .details h2{
         position: absolute;
         margin-top: 16px;
         margin-left: 70px;
@@ -622,10 +870,14 @@
     .details h3{
         position: absolute;
         color: #000;
+        width: 34px;
+        margin-left: 15px;
     }
     .details p{
         position: relative;
         color: #000;
+        width: 80%;
+        margin-left: 60px;
     }
     .line{
         position: absolute;
@@ -636,71 +888,84 @@
         background: #006666;
     }
     .about{
+        z-index: 1;
+        position: relative;
         top: 10vw;
-        left: 5vw;
+        left: 6vw;
+    }
+    .about h4{
+        margin-left: 10px;
+        position: absolute;
+        color: #000;
     }
     .about p{
         width: 70%;
-        margin-top: 75px;
-        margin-left: 65px;
+        margin-left: 90px;
+    }
+    .about1 p{
+        margin-top: 70px;
+    }
+    .about2 p{
+        margin-top: 0px;
+    }
+    .about3 p{
+        margin-top: 0px;
     }
     .experience{
         position: relative;
         top: 15vw;
-        left: 5vw;
+        left: 6vw;
     }
     .experience h3{
-        width: 40px;
-        margin-left: 15px;
-        margin-top: 120px;
+        margin-top: 0px;
     }
-    .experience p{
-        margin-top: 75px;
-        margin-left: 65px;
+    .experience1 p{
+        text-align: left ;
+        margin-top: 70px;
+    }
+    .experience2 p{
+        text-align: left ;
+        margin-top: 0px;
     }
     .awards {
         position: relative;
         top: 5vw;
-        left: 1vw;
+        left: 2vw;
     }
-    .awards h3{
-        width: 40px;
-        margin-left: 15px;
-        margin-top: 80px;
+    .award h3{
+        margin-top: 0px;
     }
-    .awards p{
-        width: 70%;
-        margin-top: 80px;
-        margin-left: 65px;
+    .award1 p{
+        margin-top: 70px;
+    }
+    .award2 p{
+        margin-top: 0px;
     }
     .education {
         position: relative;
         top: 5vw;
-        left: 1vw;
+        left: 2vw;
     }
     .education h3{
-        margin-left: 15px;
-        margin-top: 90px;
+        margin-top: -5px;
     }
-    .education p{
-        width: 60%;
-        margin-top: 80px;
-        margin-left: 100px;
+    .edu1 p{
+        margin-top: 70px;
+    }
+    .edu2 p{
+        margin-top: 10px;
     }
     .skill{
         position: relative;
         top: 5vw;
-        left: 1vw;
+        left: 2vw;
     }
     .imgskill img{
         position: relative;
         width: 50vw;
-        height: 30vw;
-        margin-left: 80px;
-        margin-top: 80px;
-    }
-    .imgskill p{
-        width: 70%;
+        height: 25vw;
+        margin-left: 20%;
+        margin-top: 70px;
     }
 
     .more{
@@ -732,70 +997,64 @@
     }
     .address {
         color: #fff;
-        position: relative;
+        position: absolute;
     }
     .address h4{
-        margin: 200px 20px 0px;
+        margin: 120px 10vw 0;
     }
     .address h5{
         width: 70vw;
-        margin: 10px 50px 20vw;
+        margin: 10px 15vw 0;
     }
     .contact {
         color: #fff;
-        position: absolute;
+        position: relative;
     }
     .contact h4{
-        margin: 100px 20px 0;
+        margin: 200px 10vw 0;
     }
     .phone{
-        position: relative;
-        margin: 10px 50px 0;
+        margin: 10px 15vw 0;
     }
     .email{
-        position: relative;
-        margin: 10px 50px 0px;
+        margin: 10px 15vw 10vw;
     }
     .social{
         color: #fff;
         position: absolute;
-        top: 0px;
-        left: 50px;
+        top: 0;
+        left: 30%;
     }
     .social h4{
-        display: none;
+        margin-left: 30px;
+        margin-top: 20px;
     }
     .social .fa{
-        font-size: 30px;
+        font-size: 40px;
         padding-top: 10px;
         text-align: center;
-        width: 50px;
-        height: 40px;
+        width: 60px;
+        height: 50px;
         color: #fff;
         display: block;
         border: 2px solid #fff;
         border-radius: 50%;
-        cursor: pointer;
+        z-index: 1;
     }
     .social .fa-facebook{
         position: absolute;
-        top: 20px;
-        left: 50px;
+        top: 50px;
+        left: 0px;
     }
     .social .fa-github{
         position: absolute;
-        top: 20px;
-        left: 125px;
+        top: 50px;
+        left: 80px;
     }
-    .social .fa-instagram{
+    .social .fa-codepen{
         position: absolute;
-        top: 20px;
-        left: 200px;
-    }
-    .social .fa-youtube{
-        position: absolute;
-        top: 20px;
-        left: 275px;
+        top: 50px;
+        left: 160px;
     }
     .top{
         position: absolute;
